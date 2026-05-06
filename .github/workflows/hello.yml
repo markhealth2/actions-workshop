@@ -15,4 +15,3 @@ jobs:
         run: |
           echo "Hello $MY_ENV"
           echo "Hello $GITHUB_ACTOR"
-Commit your changes and start a new run. You should see 
