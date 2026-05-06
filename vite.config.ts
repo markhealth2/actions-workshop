@@ -16,7 +16,10 @@ export default defineConfig({
   test: {
     environment: "jsdom",
     coverage: {
+      provider: "v8",
+      reportsDirectory: "coverage",
       reporter: ["text", "json", "json-summary"],
+      reportOnFailure: true,
     },
     setupFiles: ["./test/setup.ts"],
   },

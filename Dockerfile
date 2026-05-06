@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 COPY . .
 
-RUN npm ci
+RUN npm install
 RUN npm run build:staging
 
 # Create the server to host the static files
@@ -14,7 +14,7 @@ FROM node:22 AS server
 WORKDIR /usr/src/app
 
 COPY ./server/package*.json ./
-RUN npm ci --omit=dev
+RUN npm install --omit=dev
 
 # Create the final image to host both, server and distribute files as public
 FROM node:lts-alpine

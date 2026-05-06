@@ -1,4 +1,8 @@
 # GitHub Actions Workshop by GitHub
+/opt/hostedtoolcache/node/22.22.2/x64/bin/npm config get cache
+/home/runner/.npm
+Error: Dependencies lock file is not found in /home/runner/work/actions-workshop/actions-workshop. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock
+
 
 > *Lift-off with GitHub Actions - it's not rocket-science (unless you use it for rockets).* 🚀
 
